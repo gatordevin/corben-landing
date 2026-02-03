@@ -22,34 +22,34 @@ const Features = () => {
 
   const features = [
     {
+      icon: Terminal,
+      title: "Self-Building Tools",
+      description: "AI that autonomously creates its own tools. Need a new capability? The agent builds it on the fly, extending itself to solve your problems."
+    },
+    {
+      icon: Brain,
+      title: "LLM-Powered Intelligence",
+      description: "Built on large language models for true reasoning and understanding. Currently supports open source models, with cloud models (OpenAI, Anthropic) coming soon."
+    },
+    {
       icon: Globe,
       title: "Browser Automation",
       description: "Full browser control with screenshot-based debugging, intelligent CAPTCHA handling, and multi-tab session management for complex web workflows."
     },
     {
-      icon: Terminal,
-      title: "35+ AI Tools",
-      description: "Comprehensive tool suite including file operations, API integrations, code execution, and database operations. Everything your AI agents need."
+      icon: Cloud,
+      title: "Open Source + Cloud",
+      description: "Run open source models locally today. Cloud model support for OpenAI, Anthropic, and others being added for maximum flexibility."
     },
     {
-      icon: Brain,
-      title: "Multi-LLM Support",
-      description: "Seamlessly integrate with OpenAI, Anthropic, Google AI, Groq, and 50+ models through OpenRouter. Model-agnostic architecture."
+      icon: Workflow,
+      title: "Autonomous Workflows",
+      description: "The AI plans and executes multi-step processes, creating tools as needed. Error handling, retry logic, and intelligent adaptation built-in."
     },
     {
       icon: Shield,
       title: "Enterprise Security",
       description: "Runtime sandboxing, encrypted credential vault, and bytecode transformation. Your data stays protected at every layer."
-    },
-    {
-      icon: Workflow,
-      title: "Workflow Orchestration",
-      description: "Complex multi-step processes with error handling, retry logic, and conditional branching. Build reliable automation pipelines."
-    },
-    {
-      icon: Cloud,
-      title: "Cloud Native",
-      description: "Container-ready deployment with horizontal scaling. Run in your cloud or ours with full observability and monitoring."
     }
   ]
 
@@ -89,10 +89,10 @@ const Features = () => {
         >
           <p className="text-primary-400 text-sm font-medium uppercase tracking-wider mb-4">Platform Capabilities</p>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 text-white">
-            Enterprise-Grade AI Infrastructure
+            AI That Extends Itself
           </h2>
           <p className="text-lg text-gray-400 max-w-2xl mx-auto">
-            Built for scale, security, and reliability. Everything you need to deploy AI agents in production environments.
+            Self-building AI powered by large language models. Open source model support today, cloud models coming soon.
           </p>
         </motion.div>
 
@@ -172,20 +172,20 @@ const Features = () => {
               <h3 className="text-2xl font-bold text-white mb-6">Platform Capabilities</h3>
               <div className="grid grid-cols-2 gap-6">
                 <div className="text-center p-6 bg-dark-800/50 rounded-xl">
-                  <p className="text-3xl font-bold text-white mb-1">35+</p>
-                  <p className="text-gray-500 text-sm">Built-in Tools</p>
+                  <p className="text-3xl font-bold text-white mb-1">Self</p>
+                  <p className="text-gray-500 text-sm">Building Tools</p>
                 </div>
                 <div className="text-center p-6 bg-dark-800/50 rounded-xl">
-                  <p className="text-3xl font-bold text-white mb-1">50+</p>
-                  <p className="text-gray-500 text-sm">LLM Models</p>
+                  <p className="text-3xl font-bold text-white mb-1">LLM</p>
+                  <p className="text-gray-500 text-sm">Powered Core</p>
                 </div>
                 <div className="text-center p-6 bg-dark-800/50 rounded-xl">
-                  <p className="text-3xl font-bold text-white mb-1">Full</p>
-                  <p className="text-gray-500 text-sm">Browser Control</p>
+                  <p className="text-3xl font-bold text-white mb-1">Open</p>
+                  <p className="text-gray-500 text-sm">Source Models</p>
                 </div>
                 <div className="text-center p-6 bg-dark-800/50 rounded-xl">
-                  <p className="text-3xl font-bold text-white mb-1">Beta</p>
-                  <p className="text-gray-500 text-sm">Now Available</p>
+                  <p className="text-3xl font-bold text-white mb-1">Cloud</p>
+                  <p className="text-gray-500 text-sm">Coming Soon</p>
                 </div>
               </div>
             </div>

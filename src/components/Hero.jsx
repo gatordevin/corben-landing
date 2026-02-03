@@ -51,13 +51,13 @@ const Hero = () => {
           </div>
 
           <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6 tracking-tight">
-            <span className="text-white block">Intelligent Automation</span>
-            <span className="gradient-text block mt-2">for Enterprise</span>
+            <span className="text-white block">AI That Builds</span>
+            <span className="gradient-text block mt-2">Its Own Tools</span>
           </h1>
 
           <p className="text-lg md:text-xl text-gray-400 max-w-3xl mx-auto leading-relaxed">
-            Deploy AI agents that execute complex workflows with enterprise-grade security.
-            Browser automation, API integration, and multi-LLM orchestration built for scale.
+            Self-building AI agents powered by large language models. Autonomous tool creation,
+            browser automation, and intelligent workflows. Open source models supported, cloud models coming soon.
           </p>
         </motion.div>
 
@@ -90,8 +90,8 @@ const Hero = () => {
             <div className="w-12 h-12 bg-primary-500/10 rounded-lg flex items-center justify-center mb-4">
               <Zap className="w-6 h-6 text-primary-400" />
             </div>
-            <h3 className="text-lg font-semibold mb-2 text-white">35+ Built-in Tools</h3>
-            <p className="text-gray-400 text-sm leading-relaxed">Browser automation, file operations, APIs, and database integrations</p>
+            <h3 className="text-lg font-semibold mb-2 text-white">Self-Building Tools</h3>
+            <p className="text-gray-400 text-sm leading-relaxed">AI that autonomously creates and extends its own capabilities</p>
           </div>
 
           <div className="glass-effect rounded-xl p-6 text-left hover:bg-dark-800/60 transition-colors duration-300">
@@ -106,8 +106,8 @@ const Hero = () => {
             <div className="w-12 h-12 bg-purple-500/10 rounded-lg flex items-center justify-center mb-4">
               <Brain className="w-6 h-6 text-purple-400" />
             </div>
-            <h3 className="text-lg font-semibold mb-2 text-white">Multi-LLM Support</h3>
-            <p className="text-gray-400 text-sm leading-relaxed">OpenAI, Anthropic, Google AI, and 50+ models via OpenRouter</p>
+            <h3 className="text-lg font-semibold mb-2 text-white">LLM-Powered</h3>
+            <p className="text-gray-400 text-sm leading-relaxed">Open source models today, cloud models (OpenAI, Anthropic) coming soon</p>
           </div>
         </motion.div>
 
@@ -119,16 +119,16 @@ const Hero = () => {
           className="grid grid-cols-1 md:grid-cols-3 gap-8 pt-16 border-t border-dark-800"
         >
           <div className="text-center">
-            <div className="text-3xl md:text-4xl font-bold text-white mb-2">35+</div>
-            <div className="text-gray-500 text-sm uppercase tracking-wider">Built-in Tools</div>
+            <div className="text-3xl md:text-4xl font-bold text-white mb-2">Self</div>
+            <div className="text-gray-500 text-sm uppercase tracking-wider">Building Tools</div>
           </div>
           <div className="text-center">
-            <div className="text-3xl md:text-4xl font-bold text-white mb-2">50+</div>
-            <div className="text-gray-500 text-sm uppercase tracking-wider">LLM Models</div>
+            <div className="text-3xl md:text-4xl font-bold text-white mb-2">LLM</div>
+            <div className="text-gray-500 text-sm uppercase tracking-wider">Powered Core</div>
           </div>
           <div className="text-center">
             <div className="text-3xl md:text-4xl font-bold text-white mb-2">Open</div>
-            <div className="text-gray-500 text-sm uppercase tracking-wider">Beta Access</div>
+            <div className="text-gray-500 text-sm uppercase tracking-wider">Source Models</div>
           </div>
         </motion.div>
 

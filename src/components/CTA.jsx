@@ -86,26 +86,26 @@ const CTA = () => {
             </h2>
             
             <p className="text-xl text-gray-300 mb-8 leading-relaxed">
-              Be among the first to experience enterprise AI automation. Join our beta program and help shape the future of intelligent workflows.
+              Experience AI that builds its own tools. Powered by large language models with open source support today and cloud models coming soon.
             </p>
 
             {/* Benefits */}
             <div className="space-y-4 mb-8">
               <div className="flex items-center space-x-3">
                 <div className="w-2 h-2 bg-primary-500 rounded-full"></div>
-                <span className="text-gray-300">Early access to all features</span>
+                <span className="text-gray-300">Self-building AI that creates its own tools</span>
               </div>
               <div className="flex items-center space-x-3">
                 <div className="w-2 h-2 bg-primary-500 rounded-full"></div>
-                <span className="text-gray-300">Direct feedback channel to our team</span>
+                <span className="text-gray-300">LLM-powered reasoning and intelligence</span>
               </div>
               <div className="flex items-center space-x-3">
                 <div className="w-2 h-2 bg-primary-500 rounded-full"></div>
-                <span className="text-gray-300">Priority support during beta</span>
+                <span className="text-gray-300">Open source models supported today</span>
               </div>
               <div className="flex items-center space-x-3">
                 <div className="w-2 h-2 bg-primary-500 rounded-full"></div>
-                <span className="text-gray-300">Help shape the product roadmap</span>
+                <span className="text-gray-300">Cloud models (OpenAI, Anthropic) coming soon</span>
               </div>
             </div>
 
