@@ -52,11 +52,11 @@ const Security = () => {
   ]
 
   const complianceItems = [
-    { name: "SOC 2 Type II", status: "Compliant" },
-    { name: "ISO 27001", status: "Certified" },
-    { name: "GDPR", status: "Compliant" },
-    { name: "HIPAA", status: "Ready" },
-    { name: "CCPA", status: "Compliant" }
+    { name: "SOC 2 Type II", status: "In Progress" },
+    { name: "ISO 27001", status: "Planned" },
+    { name: "GDPR", status: "Designed For" },
+    { name: "HIPAA", status: "Designed For" },
+    { name: "CCPA", status: "Designed For" }
   ]
 
   return (
@@ -122,10 +122,10 @@ const Security = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             <div>
               <h3 className="text-2xl font-bold text-white mb-6">
-                Compliance & Certifications
+                Compliance Roadmap
               </h3>
               <p className="text-gray-400 mb-8 leading-relaxed">
-                We maintain the highest security standards and compliance certifications to ensure your data is protected according to industry best practices.
+                We're building with compliance in mind from day one. Our architecture is designed to meet the highest security standards.
               </p>
 
               <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
@@ -184,7 +184,7 @@ const Security = () => {
           </div>
         </motion.div>
 
-        {/* Security Metrics */}
+        {/* Security Features */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
@@ -196,16 +196,16 @@ const Security = () => {
             <p className="text-gray-500 text-sm">Encryption</p>
           </div>
           <div className="text-center p-6 bg-dark-900/50 border border-dark-800 rounded-xl">
-            <p className="text-2xl md:text-3xl font-bold text-white mb-1">Zero</p>
-            <p className="text-gray-500 text-sm">Data Breaches</p>
+            <p className="text-2xl md:text-3xl font-bold text-white mb-1">Sandboxed</p>
+            <p className="text-gray-500 text-sm">Execution</p>
           </div>
           <div className="text-center p-6 bg-dark-900/50 border border-dark-800 rounded-xl">
-            <p className="text-2xl md:text-3xl font-bold text-white mb-1">SOC 2</p>
-            <p className="text-gray-500 text-sm">Type II</p>
+            <p className="text-2xl md:text-3xl font-bold text-white mb-1">Zero-Trust</p>
+            <p className="text-gray-500 text-sm">Architecture</p>
           </div>
           <div className="text-center p-6 bg-dark-900/50 border border-dark-800 rounded-xl">
-            <p className="text-2xl md:text-3xl font-bold text-white mb-1">24/7</p>
-            <p className="text-gray-500 text-sm">Security Ops</p>
+            <p className="text-2xl md:text-3xl font-bold text-white mb-1">Audit</p>
+            <p className="text-gray-500 text-sm">Logging</p>
           </div>
         </motion.div>
       </div>

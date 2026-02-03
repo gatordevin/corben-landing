@@ -135,15 +135,15 @@ const Footer = () => {
 
         {/* Bottom Bar */}
         <div className="border-t border-dark-800 pt-8">
-          <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+            <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <div className="text-gray-500 text-sm">
-              {currentYear} Corben AI Agent. All rights reserved.
+              {currentYear} Corben AI. All rights reserved.
             </div>
 
             <div className="flex items-center space-x-6 text-sm">
               <div className="flex items-center space-x-2 text-gray-400">
-                <div className="w-2 h-2 bg-green-500 rounded-full"></div>
-                <span>All systems operational</span>
+                <div className="w-2 h-2 bg-primary-500 rounded-full animate-pulse"></div>
+                <span>Beta now open</span>
               </div>
             </div>
           </div>

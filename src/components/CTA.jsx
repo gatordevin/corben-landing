@@ -28,7 +28,7 @@ const CTA = () => {
     
     // Simulate form submission
     setTimeout(() => {
-      setSubmitMessage('Thank you! We\'ll be in touch within 24 hours.')
+      setSubmitMessage('Thank you for joining the beta! We\'ll be in touch soon with your access details.')
       setIsSubmitting(false)
       setFormData({
         name: '',
@@ -77,53 +77,45 @@ const CTA = () => {
           >
             <div className="inline-flex items-center space-x-2 bg-primary-500/10 border border-primary-500/20 rounded-full px-4 py-2 mb-6">
               <Calendar className="w-4 h-4 text-primary-500" />
-              <span className="text-primary-400 text-sm font-medium">Schedule Demo</span>
+              <span className="text-primary-400 text-sm font-medium">Join the Beta</span>
             </div>
             
             <h2 className="text-4xl md:text-5xl font-bold mb-6">
-              <span className="text-white">Ready to Transform</span>
-              <span className="gradient-text block">Your Business?</span>
+              <span className="text-white">Get Early Access to</span>
+              <span className="gradient-text block">Corben AI</span>
             </h2>
             
             <p className="text-xl text-gray-300 mb-8 leading-relaxed">
-              See Corben AI Agent in action. Schedule a personalized demo with our team and discover how AI automation can revolutionize your operations.
+              Be among the first to experience enterprise AI automation. Join our beta program and help shape the future of intelligent workflows.
             </p>
 
             {/* Benefits */}
             <div className="space-y-4 mb-8">
               <div className="flex items-center space-x-3">
                 <div className="w-2 h-2 bg-primary-500 rounded-full"></div>
-                <span className="text-gray-300">Live demonstration of key features</span>
+                <span className="text-gray-300">Early access to all features</span>
               </div>
               <div className="flex items-center space-x-3">
                 <div className="w-2 h-2 bg-primary-500 rounded-full"></div>
-                <span className="text-gray-300">Custom use case discussion</span>
+                <span className="text-gray-300">Direct feedback channel to our team</span>
               </div>
               <div className="flex items-center space-x-3">
                 <div className="w-2 h-2 bg-primary-500 rounded-full"></div>
-                <span className="text-gray-300">ROI analysis and implementation roadmap</span>
+                <span className="text-gray-300">Priority support during beta</span>
               </div>
               <div className="flex items-center space-x-3">
                 <div className="w-2 h-2 bg-primary-500 rounded-full"></div>
-                <span className="text-gray-300">Security and compliance review</span>
+                <span className="text-gray-300">Help shape the product roadmap</span>
               </div>
             </div>
 
             {/* Contact Info */}
             <div className="glass-effect rounded-xl p-6">
-              <h3 className="text-lg font-semibold text-white mb-4">Prefer to reach out directly?</h3>
+              <h3 className="text-lg font-semibold text-white mb-4">Have questions?</h3>
               <div className="space-y-3">
                 <div className="flex items-center space-x-3 text-gray-300">
                   <Mail className="w-5 h-5 text-primary-400" />
-                  <span>sales@corbenai.com</span>
-                </div>
-                <div className="flex items-center space-x-3 text-gray-300">
-                  <Phone className="w-5 h-5 text-primary-400" />
-                  <span>+1 (555) 123-4567</span>
-                </div>
-                <div className="flex items-center space-x-3 text-gray-300">
-                  <Calendar className="w-5 h-5 text-primary-400" />
-                  <span>Available 24/7 for enterprise customers</span>
+                  <span>hello@corbenai.com</span>
                 </div>
               </div>
             </div>
@@ -136,7 +128,7 @@ const CTA = () => {
             transition={{ duration: 0.8, delay: 0.2 }}
           >
             <div className="glass-effect rounded-2xl p-8">
-              <h3 className="text-2xl font-bold text-white mb-6">Request Your Demo</h3>
+              <h3 className="text-2xl font-bold text-white mb-6">Join the Beta</h3>
               
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -259,7 +251,7 @@ const CTA = () => {
                     <span>Submitting...</span>
                   ) : (
                     <>
-                      <span>Schedule Demo</span>
+                      <span>Request Beta Access</span>
                       <ArrowRight className="w-5 h-5" />
                     </>
                   )}

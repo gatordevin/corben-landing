@@ -99,11 +99,11 @@ const Navbar = () => {
             </a>
             <motion.a
               href="#demo"
-              className="bg-white text-dark-950 px-5 py-2.5 rounded-lg text-sm font-semibold hover:bg-gray-100 transition-all duration-200"
+              className="bg-gradient-to-r from-primary-600 to-primary-500 text-white px-5 py-2.5 rounded-lg text-sm font-semibold hover:from-primary-500 hover:to-primary-400 transition-all duration-200"
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
             >
-              Request Demo
+              Join Beta
             </motion.a>
           </div>
 
@@ -162,10 +162,10 @@ const Navbar = () => {
                   </a>
                   <a
                     href="#demo"
-                    className="block w-full bg-white text-dark-950 px-6 py-3 rounded-lg font-semibold text-center hover:bg-gray-100 transition-all duration-200"
+                    className="block w-full bg-gradient-to-r from-primary-600 to-primary-500 text-white px-6 py-3 rounded-lg font-semibold text-center hover:from-primary-500 hover:to-primary-400 transition-all duration-200"
                     onClick={() => setIsMenuOpen(false)}
                   >
-                    Request Demo
+                    Join Beta
                   </a>
                 </div>
               </div>

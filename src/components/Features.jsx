@@ -169,23 +169,23 @@ const Features = () => {
             </div>
 
             <div>
-              <h3 className="text-2xl font-bold text-white mb-6">Platform Metrics</h3>
+              <h3 className="text-2xl font-bold text-white mb-6">Platform Capabilities</h3>
               <div className="grid grid-cols-2 gap-6">
                 <div className="text-center p-6 bg-dark-800/50 rounded-xl">
                   <p className="text-3xl font-bold text-white mb-1">35+</p>
                   <p className="text-gray-500 text-sm">Built-in Tools</p>
                 </div>
                 <div className="text-center p-6 bg-dark-800/50 rounded-xl">
-                  <p className="text-3xl font-bold text-white mb-1">99.9%</p>
-                  <p className="text-gray-500 text-sm">Uptime SLA</p>
+                  <p className="text-3xl font-bold text-white mb-1">50+</p>
+                  <p className="text-gray-500 text-sm">LLM Models</p>
                 </div>
                 <div className="text-center p-6 bg-dark-800/50 rounded-xl">
-                  <p className="text-3xl font-bold text-white mb-1">SOC 2</p>
-                  <p className="text-gray-500 text-sm">Compliant</p>
+                  <p className="text-3xl font-bold text-white mb-1">Full</p>
+                  <p className="text-gray-500 text-sm">Browser Control</p>
                 </div>
                 <div className="text-center p-6 bg-dark-800/50 rounded-xl">
-                  <p className="text-3xl font-bold text-white mb-1">24/7</p>
-                  <p className="text-gray-500 text-sm">Support</p>
+                  <p className="text-3xl font-bold text-white mb-1">Beta</p>
+                  <p className="text-gray-500 text-sm">Now Available</p>
                 </div>
               </div>
             </div>

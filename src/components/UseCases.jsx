@@ -72,7 +72,7 @@ const UseCases = () => {
             Transform Your Business Operations
           </h2>
           <p className="text-lg text-gray-400 max-w-2xl mx-auto">
-            From startups to Fortune 500 companies, Corben AI Agent delivers measurable results across industries.
+            Explore how Corben AI Agent can automate workflows across different industries and use cases.
           </p>
         </motion.div>
 
@@ -125,14 +125,14 @@ const UseCases = () => {
           transition={{ duration: 0.6, delay: 0.4 }}
           className="mt-16 text-center"
         >
-          <p className="text-gray-400 mb-6">See how Corben AI can transform your specific use case</p>
+          <p className="text-gray-400 mb-6">Ready to explore what Corben AI can do for your use case?</p>
           <motion.a
             href="#demo"
-            className="inline-flex items-center space-x-2 bg-white text-dark-950 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-all duration-200"
+            className="inline-flex items-center space-x-2 bg-gradient-to-r from-primary-600 to-primary-500 text-white px-6 py-3 rounded-lg font-semibold hover:from-primary-500 hover:to-primary-400 transition-all duration-200"
             whileHover={{ scale: 1.02 }}
             whileTap={{ scale: 0.98 }}
           >
-            <span>Request Custom Demo</span>
+            <span>Join the Beta</span>
             <ArrowRight className="w-4 h-4" />
           </motion.a>
         </motion.div>
