@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
-import { Menu, X, Zap, ChevronDown, ExternalLink } from 'lucide-react'
+import { Menu, X, ChevronDown, ExternalLink } from 'lucide-react'
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false)
@@ -47,10 +47,11 @@ const Navbar = () => {
             animate={{ opacity: 1, x: 0 }}
             className="flex items-center space-x-3"
           >
-            <div className="w-9 h-9 bg-white rounded-lg flex items-center justify-center">
-              <Zap className="w-5 h-5 text-dark-950" />
-            </div>
-            <span className="text-xl font-bold text-white">Corben AI</span>
+            <img
+              src="/logo-dark.png"
+              alt="Corben AI"
+              className="h-10 w-auto"
+            />
           </motion.a>
 
           {/* Desktop Navigation */}

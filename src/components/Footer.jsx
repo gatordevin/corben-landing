@@ -1,6 +1,6 @@
 import React from 'react'
 import { motion } from 'framer-motion'
-import { Zap, Twitter, Linkedin, Github, Mail, ArrowRight } from 'lucide-react'
+import { Twitter, Linkedin, Github, Mail, ArrowRight } from 'lucide-react'
 
 const Footer = () => {
   const currentYear = new Date().getFullYear()
@@ -85,10 +85,11 @@ const Footer = () => {
           {/* Brand Section */}
           <div className="col-span-2">
             <div className="flex items-center space-x-3 mb-6">
-              <div className="w-9 h-9 bg-white rounded-lg flex items-center justify-center">
-                <Zap className="w-5 h-5 text-dark-950" />
-              </div>
-              <span className="text-xl font-bold text-white">Corben AI</span>
+              <img
+                src="/logo-dark.png"
+                alt="Corben AI"
+                className="h-10 w-auto"
+              />
             </div>
 
             <p className="text-gray-400 mb-6 text-sm leading-relaxed">

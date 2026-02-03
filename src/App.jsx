@@ -1,6 +1,7 @@
 import React from 'react'
 import Hero from './components/Hero'
 import Features from './components/Features'
+import MarketOpportunity from './components/MarketOpportunity'
 import UseCases from './components/UseCases'
 import Security from './components/Security'
 import CTA from './components/CTA'
@@ -13,6 +14,7 @@ function App() {
       <Navbar />
       <Hero />
       <Features />
+      <MarketOpportunity />
       <UseCases />
       <Security />
       <CTA />
