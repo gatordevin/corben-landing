@@ -1,0 +1,52 @@
+{
+  "name": "corben-agent-landing",
+  "version": "1.0.0",
+  "description": "Professional landing page for Corben AI Agent - Enterprise AI Automation Platform",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "dev:blog": "vite --port 3001 --config vite.blog.config.ts",
+    "dev:app": "vite --port 3002 --config vite.app.config.ts",
+    "dev:api": "vite --port 3003 --config vite.api.config.ts",
+    "build": "vite build",
+    "build:all": "npm run build:main && npm run build:blog && npm run build:app && npm run build:api",
+    "build:main": "vite build --config vite.config.ts",
+    "build:blog": "vite build --config vite.blog.config.ts",
+    "build:app": "vite build --config vite.app.config.ts",
+    "build:api": "vite build --config vite.api.config.ts",
+    "preview": "vite preview",
+    "serve": "vite preview --port 3000",
+    "router": "node subdomain-router.js",
+    "start": "npm run build:all && npm run router",
+    "vercel:dev": "vercel dev",
+    "vercel:build": "vercel build",
+    "vercel:deploy": "vercel deploy --prod",
+    "vercel:pull": "vercel pull",
+    "vercel:env": "vercel env",
+    "deploy": "npm run build:all && vercel deploy --prod",
+    "deploy:preview": "npm run build:all && vercel deploy",
+    "test:deployment": "node test-deployment.js",
+    "test:vercel": "vercel build",
+    "validate": "npm run test:deployment"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "framer-motion": "^10.16.4",
+    "lucide-react": "^0.294.0",
+    "react-intersection-observer": "^9.5.3",
+    "express": "^4.18.2",
+    "http-proxy-middleware": "^2.0.6"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.43",
+    "@types/react-dom": "^18.2.17",
+    "@vitejs/plugin-react": "^4.2.1",
+    "autoprefixer": "^10.4.16",
+    "postcss": "^8.4.32",
+    "tailwindcss": "^3.3.6",
+    "typescript": "^5.2.2",
+    "vite": "^5.0.8",
+    "vercel": "^32.1.0"
+  }
+}
