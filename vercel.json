@@ -1,39 +1,14 @@
 {
   "version": 2,
-  "name": "corben-agent-landing",
-  "builds": [
-    {
-      "src": "subdomain-router.js",
-      "use": "@vercel/node",
-      "config": {
-        "includeFiles": [
-          "dist/**",
-          "api.html",
-          "app.html",
-          "blog.html"
-        ]
-      }
-    }
-  ],
-  "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "/subdomain-router.js"
-    }
-  ],
-  "functions": {
-    "subdomain-router.js": {
-      "runtime": "nodejs18.x",
-      "memory": 1024,
-      "maxDuration": 30
-    }
-  },
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist",
+  "framework": "vite",
   "env": {
     "NODE_ENV": "production"
   },
   "headers": [
     {
-      "source": "/dist/(.*)",
+      "source": "/assets/(.*)",
       "headers": [
         {
           "key": "Cache-Control",
@@ -54,6 +29,10 @@
     {
       "source": "/api",
       "destination": "/api.html"
+    },
+    {
+      "source": "/((?!assets|.*\\.html$).*)",
+      "destination": "/index.html"
     }
   ]
 }
