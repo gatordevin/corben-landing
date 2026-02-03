@@ -44,10 +44,10 @@ const Hero = () => {
           transition={{ duration: 0.8 }}
           className="mb-8"
         >
-          <div className="inline-flex items-center space-x-2 bg-dark-800/50 backdrop-blur-sm border border-primary-500/20 rounded-full px-4 py-2 mb-8">
-            <Sparkles className="w-4 h-4 text-primary-400" />
-            <span className="text-gray-300 text-sm font-medium">Now Open for Beta</span>
-            <ChevronRight className="w-4 h-4 text-gray-400" />
+          <div className="inline-flex items-center space-x-2 bg-green-900/30 backdrop-blur-sm border border-green-500/40 rounded-full px-4 py-2 mb-8">
+            <Shield className="w-4 h-4 text-green-400" />
+            <span className="text-green-300 text-sm font-medium">Secured Zero Trust Environment</span>
+            <ChevronRight className="w-4 h-4 text-green-400" />
           </div>
 
           <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6 tracking-tight">
@@ -94,12 +94,12 @@ const Hero = () => {
             <p className="text-gray-400 text-sm leading-relaxed">AI that autonomously creates and extends its own capabilities</p>
           </div>
 
-          <div className="glass-effect rounded-xl p-6 text-left hover:bg-dark-800/60 transition-colors duration-300">
-            <div className="w-12 h-12 bg-green-500/10 rounded-lg flex items-center justify-center mb-4">
+          <div className="glass-effect rounded-xl p-6 text-left hover:bg-dark-800/60 transition-colors duration-300 border border-green-500/30">
+            <div className="w-12 h-12 bg-green-500/20 rounded-lg flex items-center justify-center mb-4">
               <Shield className="w-6 h-6 text-green-400" />
             </div>
-            <h3 className="text-lg font-semibold mb-2 text-white">Enterprise Security</h3>
-            <p className="text-gray-400 text-sm leading-relaxed">Runtime sandboxing, encrypted credential vault, SOC 2 compliant</p>
+            <h3 className="text-lg font-semibold mb-2 text-green-400">Zero Trust Security</h3>
+            <p className="text-gray-400 text-sm leading-relaxed">Completely isolated environment. No implicit trust - every action verified.</p>
           </div>
 
           <div className="glass-effect rounded-xl p-6 text-left hover:bg-dark-800/60 transition-colors duration-300">
@@ -116,8 +116,12 @@ const Hero = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.6 }}
-          className="grid grid-cols-1 md:grid-cols-3 gap-8 pt-16 border-t border-dark-800"
+          className="grid grid-cols-1 md:grid-cols-4 gap-8 pt-16 border-t border-dark-800"
         >
+          <div className="text-center">
+            <div className="text-3xl md:text-4xl font-bold text-green-400 mb-2">Zero Trust</div>
+            <div className="text-gray-500 text-sm uppercase tracking-wider">Security Model</div>
+          </div>
           <div className="text-center">
             <div className="text-3xl md:text-4xl font-bold text-white mb-2">Self</div>
             <div className="text-gray-500 text-sm uppercase tracking-wider">Building Tools</div>

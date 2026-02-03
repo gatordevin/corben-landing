@@ -21,33 +21,33 @@ const Security = () => {
   const securityFeatures = [
     {
       icon: Shield,
-      title: "Runtime Sandboxing",
-      description: "Bytecode-level transformation prevents dangerous operations. Your code runs in a controlled environment with enforced boundaries."
+      title: "Complete Isolation",
+      description: "The AI runs in a fully isolated environment. No access to your systems without explicit permission. Every boundary is enforced."
     },
     {
       icon: Lock,
-      title: "Encrypted Credential Vault",
-      description: "AES-256 encryption for all sensitive data. Credentials are never exposed in logs or memory. Zero-trust architecture."
+      title: "Verify Everything",
+      description: "Zero implicit trust. Every action, every request, every data access is verified and authenticated before execution."
     },
     {
       icon: Eye,
-      title: "Audit Logging",
-      description: "Complete audit trail of all operations. Monitor every action with detailed logs and real-time alerting."
+      title: "Full Audit Trail",
+      description: "Complete visibility into every operation. Real-time monitoring, detailed logs, and instant alerting on anomalies."
     },
     {
       icon: Key,
-      title: "Role-Based Access",
-      description: "Granular permissions with multi-factor authentication. Control who can access what with enterprise-grade IAM."
+      title: "Encrypted Credentials",
+      description: "AES-256 encryption for all sensitive data. Credentials never exposed in logs, memory, or transit."
     },
     {
       icon: Server,
-      title: "Network Isolation",
-      description: "Controlled network access with domain allowlisting. Prevent data exfiltration and unauthorized connections."
+      title: "Network Segmentation",
+      description: "Strict network isolation with explicit allowlisting. No unauthorized connections. No data exfiltration paths."
     },
     {
       icon: FileCheck,
-      title: "Data Encryption",
-      description: "End-to-end encryption for data at rest and in transit. Your sensitive information is protected at every step."
+      title: "Least Privilege",
+      description: "Minimal permissions by default. The AI only gets access to what it absolutely needs, nothing more."
     }
   ]
 
@@ -71,12 +71,16 @@ const Security = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <p className="text-primary-400 text-sm font-medium uppercase tracking-wider mb-4">Enterprise Security</p>
+          <div className="inline-flex items-center space-x-2 bg-green-900/30 border border-green-500/40 rounded-full px-4 py-2 mb-6">
+            <Shield className="w-4 h-4 text-green-400" />
+            <span className="text-green-300 text-sm font-bold uppercase tracking-wider">Zero Trust Environment</span>
+          </div>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 text-white">
-            Security First, Always
+            No Implicit Trust. <span className="text-green-400">Ever.</span>
           </h2>
-          <p className="text-lg text-gray-400 max-w-2xl mx-auto">
-            Built with enterprise-grade security from the ground up. Your data is protected with military-grade encryption and zero-trust architecture.
+          <p className="text-lg text-gray-400 max-w-3xl mx-auto">
+            Corben AI runs in a completely isolated, zero trust security model. Every action is verified. Every connection is authenticated.
+            Enterprise-grade security isn't an add-on - it's the foundation.
           </p>
         </motion.div>
 
@@ -148,35 +152,35 @@ const Security = () => {
             </div>
 
             <div>
-              <h3 className="text-2xl font-bold text-white mb-6">
-                Zero-Trust Architecture
+              <h3 className="text-2xl font-bold text-green-400 mb-6">
+                Zero Trust Principles
               </h3>
               <div className="space-y-4">
-                <div className="flex items-start space-x-4">
-                  <div className="w-8 h-8 bg-dark-800 rounded flex items-center justify-center flex-shrink-0 mt-0.5">
-                    <Network className="w-4 h-4 text-gray-400" />
+                <div className="flex items-start space-x-4 p-3 bg-green-900/20 border border-green-500/30 rounded-lg">
+                  <div className="w-8 h-8 bg-green-500/20 rounded flex items-center justify-center flex-shrink-0 mt-0.5">
+                    <Network className="w-4 h-4 text-green-400" />
                   </div>
                   <div>
-                    <p className="text-white font-medium">Network Segmentation</p>
-                    <p className="text-gray-400 text-sm">Isolated execution environments with strict network policies</p>
+                    <p className="text-green-400 font-medium">Never Trust, Always Verify</p>
+                    <p className="text-gray-400 text-sm">No action is assumed safe. Every operation is verified before execution.</p>
                   </div>
                 </div>
-                <div className="flex items-start space-x-4">
-                  <div className="w-8 h-8 bg-dark-800 rounded flex items-center justify-center flex-shrink-0 mt-0.5">
-                    <Key className="w-4 h-4 text-gray-400" />
+                <div className="flex items-start space-x-4 p-3 bg-green-900/20 border border-green-500/30 rounded-lg">
+                  <div className="w-8 h-8 bg-green-500/20 rounded flex items-center justify-center flex-shrink-0 mt-0.5">
+                    <Key className="w-4 h-4 text-green-400" />
                   </div>
                   <div>
-                    <p className="text-white font-medium">Identity Verification</p>
-                    <p className="text-gray-400 text-sm">Every request authenticated and authorized at multiple layers</p>
+                    <p className="text-green-400 font-medium">Assume Breach</p>
+                    <p className="text-gray-400 text-sm">Built as if every component could be compromised. Defense in depth at every layer.</p>
                   </div>
                 </div>
-                <div className="flex items-start space-x-4">
-                  <div className="w-8 h-8 bg-dark-800 rounded flex items-center justify-center flex-shrink-0 mt-0.5">
-                    <Eye className="w-4 h-4 text-gray-400" />
+                <div className="flex items-start space-x-4 p-3 bg-green-900/20 border border-green-500/30 rounded-lg">
+                  <div className="w-8 h-8 bg-green-500/20 rounded flex items-center justify-center flex-shrink-0 mt-0.5">
+                    <Eye className="w-4 h-4 text-green-400" />
                   </div>
                   <div>
-                    <p className="text-white font-medium">Continuous Monitoring</p>
-                    <p className="text-gray-400 text-sm">Real-time threat detection and automated response</p>
+                    <p className="text-green-400 font-medium">Explicit Verification</p>
+                    <p className="text-gray-400 text-sm">Every identity, device, and data flow is explicitly verified continuously.</p>
                   </div>
                 </div>
               </div>
@@ -191,21 +195,21 @@ const Security = () => {
           transition={{ duration: 0.6, delay: 0.6 }}
           className="mt-12 grid grid-cols-2 md:grid-cols-4 gap-6"
         >
+          <div className="text-center p-6 bg-green-900/20 border-2 border-green-500/40 rounded-xl">
+            <p className="text-2xl md:text-3xl font-bold text-green-400 mb-1">Zero Trust</p>
+            <p className="text-gray-400 text-sm">Security Model</p>
+          </div>
+          <div className="text-center p-6 bg-dark-900/50 border border-dark-800 rounded-xl">
+            <p className="text-2xl md:text-3xl font-bold text-white mb-1">Isolated</p>
+            <p className="text-gray-500 text-sm">Environment</p>
+          </div>
+          <div className="text-center p-6 bg-dark-900/50 border border-dark-800 rounded-xl">
+            <p className="text-2xl md:text-3xl font-bold text-white mb-1">Verified</p>
+            <p className="text-gray-500 text-sm">Every Action</p>
+          </div>
           <div className="text-center p-6 bg-dark-900/50 border border-dark-800 rounded-xl">
             <p className="text-2xl md:text-3xl font-bold text-white mb-1">AES-256</p>
             <p className="text-gray-500 text-sm">Encryption</p>
-          </div>
-          <div className="text-center p-6 bg-dark-900/50 border border-dark-800 rounded-xl">
-            <p className="text-2xl md:text-3xl font-bold text-white mb-1">Sandboxed</p>
-            <p className="text-gray-500 text-sm">Execution</p>
-          </div>
-          <div className="text-center p-6 bg-dark-900/50 border border-dark-800 rounded-xl">
-            <p className="text-2xl md:text-3xl font-bold text-white mb-1">Zero-Trust</p>
-            <p className="text-gray-500 text-sm">Architecture</p>
-          </div>
-          <div className="text-center p-6 bg-dark-900/50 border border-dark-800 rounded-xl">
-            <p className="text-2xl md:text-3xl font-bold text-white mb-1">Audit</p>
-            <p className="text-gray-500 text-sm">Logging</p>
           </div>
         </motion.div>
       </div>

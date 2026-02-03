@@ -22,6 +22,12 @@ const Features = () => {
 
   const features = [
     {
+      icon: Shield,
+      title: "Zero Trust Security",
+      description: "Completely isolated execution environment. No implicit trust - every action is verified, every connection authenticated. Enterprise-grade security from the ground up.",
+      highlight: true
+    },
+    {
       icon: Terminal,
       title: "Self-Building Tools",
       description: "AI that autonomously creates its own tools. Need a new capability? The agent builds it on the fly, extending itself to solve your problems."
@@ -45,11 +51,6 @@ const Features = () => {
       icon: Workflow,
       title: "Autonomous Workflows",
       description: "The AI plans and executes multi-step processes, creating tools as needed. Error handling, retry logic, and intelligent adaptation built-in."
-    },
-    {
-      icon: Shield,
-      title: "Enterprise Security",
-      description: "Runtime sandboxing, encrypted credential vault, and bytecode transformation. Your data stays protected at every layer."
     }
   ]
 
@@ -109,13 +110,26 @@ const Features = () => {
               <motion.div
                 key={index}
                 variants={itemVariants}
-                className="group relative bg-dark-900/50 border border-dark-800 rounded-xl p-8 hover:border-dark-700 hover:bg-dark-900/80 transition-all duration-300"
+                className={`group relative bg-dark-900/50 rounded-xl p-8 hover:bg-dark-900/80 transition-all duration-300 ${
+                  feature.highlight
+                    ? 'border-2 border-green-500/50 hover:border-green-400/70'
+                    : 'border border-dark-800 hover:border-dark-700'
+                }`}
               >
-                <div className="w-12 h-12 bg-dark-800 rounded-lg flex items-center justify-center mb-6 group-hover:bg-dark-700 transition-colors duration-300">
-                  <Icon className="w-6 h-6 text-gray-300" />
+                {feature.highlight && (
+                  <div className="absolute -top-3 left-6 bg-green-500 text-white text-xs font-bold px-3 py-1 rounded-full">
+                    CRITICAL
+                  </div>
+                )}
+                <div className={`w-12 h-12 rounded-lg flex items-center justify-center mb-6 transition-colors duration-300 ${
+                  feature.highlight
+                    ? 'bg-green-500/20 group-hover:bg-green-500/30'
+                    : 'bg-dark-800 group-hover:bg-dark-700'
+                }`}>
+                  <Icon className={`w-6 h-6 ${feature.highlight ? 'text-green-400' : 'text-gray-300'}`} />
                 </div>
 
-                <h3 className="text-xl font-semibold text-white mb-3">
+                <h3 className={`text-xl font-semibold mb-3 ${feature.highlight ? 'text-green-400' : 'text-white'}`}>
                   {feature.title}
                 </h3>
 
