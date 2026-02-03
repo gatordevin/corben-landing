@@ -23,49 +23,37 @@ const UseCases = () => {
       icon: Building2,
       title: "Enterprise Automation",
       description: "Automate complex business processes across multiple systems. From invoice processing to employee onboarding, handle it all with intelligent agents.",
-      benefits: ["70% reduction in operational costs", "24/7 availability", "Error-free processing"],
-      metric: "70%",
-      metricLabel: "Cost Reduction"
+      benefits: ["24/7 availability", "Consistent processing", "Scalable workflows"]
     },
     {
       icon: Users,
       title: "Customer Support",
       description: "Provide instant, intelligent customer support across all channels. Handle complex queries, process refunds, and escalate when needed.",
-      benefits: ["90% first-contact resolution", "Multi-language support", "Seamless human handoff"],
-      metric: "90%",
-      metricLabel: "Resolution Rate"
+      benefits: ["Multi-language support", "Seamless human handoff", "Automated routing"]
     },
     {
       icon: TrendingUp,
       title: "Sales & Marketing",
       description: "Qualify leads, personalize outreach, and nurture prospects through the entire sales funnel with AI-powered automation.",
-      benefits: ["3x conversion rates", "Personalized at scale", "Real-time optimization"],
-      metric: "3x",
-      metricLabel: "Conversion Rate"
+      benefits: ["Personalized at scale", "Lead qualification", "Campaign automation"]
     },
     {
       icon: FileText,
       title: "Document Processing",
       description: "Extract, validate, and process information from documents, forms, and emails. Turn unstructured data into actionable insights.",
-      benefits: ["95% accuracy rate", "Multi-format support", "Compliance ready"],
-      metric: "95%",
-      metricLabel: "Accuracy"
+      benefits: ["Multi-format support", "Data extraction", "Compliance ready"]
     },
     {
       icon: Search,
       title: "Research & Analysis",
       description: "Gather market intelligence, analyze competitors, and generate comprehensive reports. Stay ahead with AI-powered insights.",
-      benefits: ["Real-time data collection", "Multi-source aggregation", "Automated reporting"],
-      metric: "5x",
-      metricLabel: "Faster Research"
+      benefits: ["Real-time data collection", "Multi-source aggregation", "Automated reporting"]
     },
     {
       icon: Code,
       title: "Development Ops",
       description: "Automate testing, deployment pipelines, and code reviews. Integrate AI into your development workflow seamlessly.",
-      benefits: ["CI/CD integration", "Automated testing", "Code quality analysis"],
-      metric: "50%",
-      metricLabel: "Time Saved"
+      benefits: ["CI/CD integration", "Automated testing", "Code quality analysis"]
     }
   ]
 
@@ -115,18 +103,14 @@ const UseCases = () => {
                   </div>
                 </div>
 
-                <div className="flex items-center justify-between border-t border-dark-800 pt-6">
-                  <div className="space-y-2">
+                <div className="border-t border-dark-800 pt-6">
+                  <div className="flex flex-wrap gap-3">
                     {useCase.benefits.map((benefit, idx) => (
                       <div key={idx} className="flex items-center space-x-2">
                         <CheckCircle className="w-4 h-4 text-gray-500" />
                         <span className="text-gray-400 text-sm">{benefit}</span>
                       </div>
                     ))}
-                  </div>
-                  <div className="text-right pl-6 border-l border-dark-800">
-                    <p className="text-3xl font-bold text-white">{useCase.metric}</p>
-                    <p className="text-gray-500 text-sm">{useCase.metricLabel}</p>
                   </div>
                 </div>
               </motion.div>

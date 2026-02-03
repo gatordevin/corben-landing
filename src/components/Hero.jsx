@@ -144,22 +144,6 @@ const Hero = () => {
           </div>
         </motion.div>
 
-        {/* Trusted By Section */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.8 }}
-          className="mt-20 pt-12 border-t border-dark-800"
-        >
-          <p className="text-gray-500 text-sm uppercase tracking-wider mb-8">Trusted by leading enterprises</p>
-          <div className="flex flex-wrap justify-center items-center gap-x-12 gap-y-6 opacity-50">
-            <div className="text-2xl font-bold text-gray-400">ACME Corp</div>
-            <div className="text-2xl font-bold text-gray-400">TechGiant</div>
-            <div className="text-2xl font-bold text-gray-400">FinanceHub</div>
-            <div className="text-2xl font-bold text-gray-400">DataFlow</div>
-            <div className="text-2xl font-bold text-gray-400">CloudBase</div>
-          </div>
-        </motion.div>
       </div>
     </section>
   )
